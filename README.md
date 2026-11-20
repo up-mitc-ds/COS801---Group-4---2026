@@ -168,6 +168,27 @@ Model performance may vary across environments and software versions.
 
 ### Guide to running the notebook:
 
+The notebook was written for **Google Colab with a GPU**. Outputs are written to /content/afrisenti_monolingual_results.
+1. Open 801_full_code.ipynb in Colab and choose *Runtime → Change runtime type → GPU*.
+2. Install any missing packages:
+   pip install transformers datasets accelerate sentencepiece scikit-learn seaborn openpyxl
+   You need sentencepiece because the tokenizers are loaded with use_fast=False.
+3. Run all cells in order. The notebook runs E1 → E2 → E3 sequentially, and E2 and E3 reuse objects from earlier cells, so don't run sections on their own.
+4. To run outside Colab, change OUTPUT_ROOT in the setup cell to a local path.
+Expect a run to take on the order of an hour or more on a single T4-class GPU: there are 10 fine-tuning runs plus 18 evaluation passes.
+
+#### Outputs
+afrisenti_monolingual_results/
+├── cleaned_data/                         # cleaned MONO splits (CSV)
+├── models/
+│   ├── <language>_<model>/best_model/    # 9 E1 checkpoints
+│   └── mono_plus_cs_augmented/           # E3 model
+├── macro_f1_comparison.png               # E1 chart
+├── afrisenti_model_comparison.xlsx       # E1 results, dataset sizes, label distribution, text statistics
+├── code_switched_experiments/
+│   └── cleaned_cs_data/                  # pooled CS splits (CSV)
+└── mono_to_cs_evaluation/
+    └── mono_to_cs_and_augmentation_results.xlsx   # E2 + E3 results
 
 
 ### Dataset Acknowledgement
