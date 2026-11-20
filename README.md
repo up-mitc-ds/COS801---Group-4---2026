@@ -176,8 +176,7 @@ This project uses the publicly available Masakhane AfriSenti dataset, developed 
 
 Dataset: https://huggingface.co/datasets/masakhane/afrisenti
 
-Project Context
-
+###Project Context
 Module: COS801
 
 Research Area: Natural Language Processing, African Languages, Sentiment Analysis and Code-Switching
@@ -186,7 +185,9 @@ Project Type: Academic Research
 
 ### Authors:
 Kgoboko Maripane
+
 Nqobile Ngidi
+
 Phakisho Kupa
 
 N.B:
