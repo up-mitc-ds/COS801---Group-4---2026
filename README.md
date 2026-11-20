@@ -171,13 +171,20 @@ Model performance may vary across environments and software versions.
 
 
 ### Dataset Acknowledgement
+
 This project uses the publicly available Masakhane AfriSenti dataset, developed through collaborative research efforts supporting natural language processing for African languages.
+
 Dataset: https://huggingface.co/datasets/masakhane/afrisenti
+
 Project Context
+
 Module: COS801
+
 Research Area: Natural Language Processing, African Languages, Sentiment Analysis and Code-Switching
+
 Project Type: Academic Research
-Authors:
+
+### Authors:
 Kgoboko Maripane
 Nqobile Ngidi
 Phakisho Kupa
