@@ -166,6 +166,10 @@ The experiments use a fixed random seed of 42 where configured.
 Model performance may vary across environments and software versions.
 
 
+### Guide to running the notebook:
+
+
+
 ### Dataset Acknowledgement
 This project uses the publicly available Masakhane AfriSenti dataset, developed through collaborative research efforts supporting natural language processing for African languages.
 Dataset: https://huggingface.co/datasets/masakhane/afrisenti
